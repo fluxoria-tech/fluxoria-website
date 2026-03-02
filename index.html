@@ -1,112 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title> Fluxoria | IT Solutions Company</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluxoria LLP | IT Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    transition:0.3s;
+}
+
+.dark{
+    background:#0f172a;
+    color:#f1f5f9;
+}
+
+header{
+    height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+}
+
+section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.dark .card{
+    background:#1e293b;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,textarea{
+    padding:12px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+.dark input,.dark textarea{
+    background:#334155;
+    color:white;
+    border:1px solid #475569;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+
+/* Dark Mode Toggle */
+.toggle{
+    position:fixed;
+    top:15px;
+    right:20px;
+    background:#2563eb;
+    color:white;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Animation */
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <h1>🚀 Fluxoria </h1>
-        <p>End-to-End IT Solutions | Development | Cloud | DevOps</p>
-        <a href="#contact" class="btn">Get Started</a>
-    </div>
-</header>
+<div class="toggle" onclick="toggleDark()">🌙 Dark Mode</div>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#industries">Industries</a>
-    <a href="#contact">Contact</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section id="about" class="container">
-    <h2>About Us</h2>
-    <p>
-        Fluxoria  is a full-service IT solutions company delivering software development,
-        cloud computing, DevOps, infrastructure management, and digital transformation.
-        We help startups, SMEs, and enterprises build scalable digital products and secure cloud infrastructure.
-    </p>
+<header>
+<div class="hero fade">
+<h1>🚀 Fluxoria LLP</h1>
+<p>End-to-End IT Solutions | Development | Cloud | DevOps</p>
+<a href="#contact" class="btn">Get Started</a>
+</div>
+</header>
+
+<section id="about" class="fade">
+<h2>About Us</h2>
+<p>
+Fluxoria LLP is a full-service IT solutions company delivering software development,
+cloud computing, DevOps automation, infrastructure management, and digital transformation.
+We help startups and enterprises build scalable digital products and secure cloud environments.
+</p>
 </section>
 
-<section id="services" class="container">
-    <h2>Our Services</h2>
+<section id="services" class="fade">
+<h2>Our Services</h2>
+<div class="grid">
 
-    <div class="grid">
-        <div class="card">
-            <h3>💻 Software Development</h3>
-            <ul>
-                <li>Custom Web Applications</li>
-                <li>Mobile App Development</li>
-                <li>Full-Stack Development</li>
-                <li>E-commerce Solutions</li>
-                <li>API Development</li>
-                <li>SaaS Product Development</li>
-            </ul>
-        </div>
+<div class="card">
+<h3>💻 Software Development</h3>
+<p>Web Apps, Mobile Apps, SaaS, APIs, E-commerce, UI/UX.</p>
+</div>
 
-        <div class="card">
-            <h3>☁️ Cloud & Infrastructure</h3>
-            <ul>
-                <li>Cloud Architecture Design</li>
-                <li>Cloud Migration</li>
-                <li>Server Setup & Configuration</li>
-                <li>High Availability Setup</li>
-                <li>Cost Optimization</li>
-                <li>Infrastructure Monitoring</li>
-            </ul>
-        </div>
+<div class="card">
+<h3>☁️ Cloud Services</h3>
+<p>AWS Architecture, Migration, Monitoring, Cost Optimization.</p>
+</div>
 
-        <div class="card">
-            <h3>⚙️ DevOps & Automation</h3>
-            <ul>
-                <li>CI/CD Pipeline Setup</li>
-                <li>Terraform (IaC)</li>
-                <li>Docker & Kubernetes</li>
-                <li>Automated Deployment</li>
-                <li>DevOps Consulting</li>
-            </ul>
-        </div>
+<div class="card">
+<h3>⚙️ DevOps</h3>
+<p>CI/CD, Terraform, Docker, Kubernetes, Automation.</p>
+</div>
 
-        <div class="card">
-            <h3>🔐 Security & Managed Services</h3>
-            <ul>
-                <li>Network & Cloud Security</li>
-                <li>IAM & Access Control</li>
-                <li>Firewall & VPN Setup</li>
-                <li>Linux Administration</li>
-                <li>24/7 Monitoring & Support</li>
-            </ul>
-        </div>
-    </div>
+<div class="card">
+<h3>🔐 Managed IT</h3>
+<p>Security, Linux Admin, Firewall Setup, 24/7 Support.</p>
+</div>
+
+</div>
 </section>
 
-<section id="industries" class="container">
-    <h2>Industries We Serve</h2>
-    <div class="industry-list">
-        <span>Startups</span>
-        <span>SaaS</span>
-        <span>E-commerce</span>
-        <span>FinTech</span>
-        <span>Healthcare</span>
-        <span>Education</span>
-    </div>
-</section>
-
-<section id="contact" class="container">
-    <h2>Contact Us</h2>
-    <p>Email: info@fluxoria.in</p>
-    <p>Phone: +91-7455064062</p>
-    <p>Phone: +91-9759597656</p>
-    <a href="mailto:info@fluxoria.in" class="btn">Send Email</a>
+<section id="contact" class="fade">
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button class="btn">Send Message</button>
+</form>
 </section>
 
 <footer>
-    <p>© 2026 Fluxoria LLP. All Rights Reserved.</p>
+© 2026 Fluxoria LLP. All Rights Reserved.
 </footer>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp" target="_blank">💬</a>
+
+<script>
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+
+const faders=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+    faders.forEach(el=>{
+        const top=el.getBoundingClientRect().top;
+        if(top<window.innerHeight-100){
+            el.classList.add('show');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
