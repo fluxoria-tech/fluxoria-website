@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Fluxoria LLP | Cloud, DevOps & AI Solutions | Digital Transformation Experts</title>
+  <meta name="description" content="Fluxoria LLP delivers end-to-end IT solutions — cloud computing, DevOps automation, AI workflow integration, software development, and digital transformation consulting for businesses worldwide." />
+  <meta name="keywords" content="cloud computing, DevOps, AI workflow, digital transformation, software development, infrastructure automation, Terraform, Kubernetes, AWS, Azure, GCP, IT consulting, LLM integration, MLOps" />
+  <meta name="author" content="Fluxoria LLP" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.fluxoria.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fluxoria.com/" />
+  <meta property="og:title" content="Fluxoria LLP | Cloud, DevOps & AI Solutions" />
+  <meta property="og:description" content="Empowering businesses worldwide with intelligent cloud solutions, DevOps automation, AI workflows, and scalable digital systems." />
+  <meta property="og:image" content="https://www.fluxoria.com/assets/logo.png" />
+  <meta property="og:site_name" content="Fluxoria LLP" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fluxoria LLP | Cloud, DevOps & AI Solutions" />
+  <meta name="twitter:description" content="Empowering businesses worldwide with intelligent cloud solutions, DevOps automation, and AI workflows." />
+  <meta name="twitter:image" content="https://www.fluxoria.com/assets/logo.png" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Fluxoria LLP",
+    "url": "https://www.fluxoria.com",
+    "logo": "https://www.fluxoria.com/assets/logo.png",
+    "description": "Full-service IT solutions company delivering end-to-end technology services including software development, cloud computing, DevOps, AI workflow integration, and digital transformation.",
+    "foundingDate": "2024",
+    "areaServed": "Worldwide",
+    "serviceType": ["Cloud Computing", "DevOps Automation", "Software Development", "AI Workflow Integration", "IT Consulting", "Digital Transformation"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "hello@fluxoria.com"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/fluxoria"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__logo" aria-label="Fluxoria LLP Home">
+        <img src="assets/logo.png" alt="Fluxoria LLP — Digital Transformation & Data Flow" width="150" height="50" />
+      </a>
+
+      <div class="nav__menu" id="navMenu" role="navigation">
+        <ul class="nav__list">
+          <li><a href="#home"         class="nav__link active">Home</a></li>
+          <li><a href="#about"        class="nav__link">About</a></li>
+          <li><a href="#services"     class="nav__link">Services</a></li>
+          <li><a href="#ai-solutions" class="nav__link">AI Solutions</a></li>
+          <li><a href="#why-us"       class="nav__link">Why Us</a></li>
+          <li><a href="#tech-stack"   class="nav__link">Technologies</a></li>
+          <li><a href="#contact"      class="nav__link nav__link--cta">Get Started</a></li>
+        </ul>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <div class="hero__badge" data-aos="fade-down" data-aos-delay="100">
+          <span class="badge__pulse"></span>
+          <span>Fluxoria LLP &mdash; IT Solutions &amp; Digital Transformation</span>
+        </div>
+
+        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">
+          <span class="typing-text" id="typingText"></span>
+          <br />
+          <span class="hero__title--sub">Building the Future,<br />One System at a Time.</span>
+        </h1>
+
+        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="350">
+          We empower businesses worldwide with intelligent cloud solutions, DevOps automation,
+          AI workflow integration, and scalable digital systems that drive efficiency,
+          security, and sustainable growth.
+        </p>
+
+        <div class="hero__actions" data-aos="fade-up" data-aos-delay="450">
+          <a href="#services" class="btn btn--primary">
+            <span>Explore Services</span>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#contact" class="btn btn--outline">
+            <span>Start a Project</span>
+          </a>
+        </div>
+
+        <div class="hero__stats" data-aos="fade-up" data-aos-delay="550">
+          <div class="stat">
+            <span class="stat__number" data-target="150">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Projects Delivered</span>
+          </div>
+          <div class="stat__divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat__number" data-target="50">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Happy Clients</span>
+          </div>
+          <div class="stat__divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat__number" data-target="99">0</span><span class="stat__suffix">%</span>
+            <span class="stat__label">Client Satisfaction</span>
+          </div>
+          <div class="stat__divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat__number" data-target="24">0</span><span class="stat__suffix">/7</span>
+            <span class="stat__label">Support Available</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <a href="#about" tabindex="-1">
+          <div class="scroll-indicator"><span></span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__content" data-aos="fade-right">
+            <div class="section__tag">Our Story</div>
+            <h2 class="section__title" id="about-title">
+              Born from Passion.<br />Built for <span class="text-gradient">Transformation.</span>
+            </h2>
+            <p class="about__text">
+              Fluxoria was born from a simple belief:
+              <strong>technology should not just support businesses — it should transform them.</strong>
+            </p>
+            <p class="about__text">
+              Founded by passionate technology professionals with real-world experience in cloud operations,
+              DevOps engineering, infrastructure automation, and enterprise IT services — we saw a gap.
+              Businesses needed faster execution, smarter automation, and reliable digital transformation partners.
+              <em>That's where Fluxoria began.</em>
+            </p>
+            <p class="about__text">
+              The name <em>Fluxoria</em> represents <strong>"Flow + Innovation + Power"</strong> — a continuous
+              stream of technological evolution. We help organizations move from outdated systems to scalable
+              cloud-native architectures, from manual operations to automated pipelines, and from uncertainty to clarity.
+            </p>
+
+            <div class="about__values">
+              <div class="value-item">
+                <i class="fas fa-eye" aria-hidden="true"></i>
+                <span>Transparency</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-code" aria-hidden="true"></i>
+                <span>Technical Excellence</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+                <span>Speed &amp; Precision</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                <span>Client-Centric</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                <span>Continuous Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__visual" data-aos="fade-left">
+            <div class="about__card about__card--main">
+              <div class="card__icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
+              <h3>Our Mission</h3>
+              <p>"To empower businesses worldwide with intelligent cloud solutions, DevOps automation, and scalable digital systems that drive efficiency, security, and sustainable growth."</p>
+            </div>
+
+            <div class="about__card about__card--vision">
+              <div class="card__icon"><i class="fas fa-globe" aria-hidden="true"></i></div>
+              <h3>Global Vision</h3>
+              <p>"To become a globally recognized technology partner delivering next-generation cloud, automation, and digital transformation solutions that shape the future of businesses."</p>
+            </div>
+
+            <div class="about__philosophy">
+              <p class="philosophy__text">
+                "If it can be automated, <strong>optimize it.</strong><br />
+                If it can be improved, <strong>transform it.</strong><br />
+                If it can scale, <strong>build it future-ready.</strong>"
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services section section--dark" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__header" data-aos="fade-up">
+          <div class="section__tag">What We Do</div>
+          <h2 class="section__title" id="services-title">
+            Comprehensive Technology <span class="text-gradient">Solutions</span>
+          </h2>
+          <p class="section__subtitle">
+            From startups to enterprises, we deliver end-to-end IT solutions that transform your business
+            operations and accelerate growth.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+            <h3 class="service-card__title">Software Development</h3>
+            <p class="service-card__desc">Custom software solutions built for scale, performance, and exceptional user experience.</p>
+            <ul class="service-card__list">
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Custom Web Application Development</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Mobile App Development (Android &amp; iOS)</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Full-Stack Development</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> E-commerce Development</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> API Development &amp; Integration</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> SaaS Product Development</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> UI/UX Design</li>
+            </ul>
+            <a href="#contact" class="service-card__link">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+            <h3 class="service-card__title">Cloud &amp; Infrastructure</h3>
+            <p class="service-card__desc">Scalable, secure cloud solutions on AWS, Azure, and Google Cloud Platform.</p>
+            <ul class="service-card__list">
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Cloud Architecture Design</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Cloud Migration (On-Prem to Cloud)</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Server Setup &amp; Configuration</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> High Availability &amp; Disaster Recovery</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Cloud Cost Optimization &amp; Billing Analysis</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Infrastructure Monitoring &amp; Alerting</li>
+            </ul>
+            <a href="#contact" class="service-card__link">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+            <h3 class="service-card__title">DevOps &amp; Automation</h3>
+            <p class="service-card__desc">Accelerate delivery with automated pipelines, IaC, and containerized deployments.</p>
+            <ul class="service-card__list">
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> CI/CD Pipeline Setup</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Infrastructure as Code (Terraform)</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Docker &amp; Kubernetes Deployment</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Automated Deployment &amp; Release</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> DevOps Implementation &amp; Consulting</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Environment Automation</li>
+            </ul>
+            <a href="#contact" class="service-card__link">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            <h3 class="service-card__title">IT Consulting &amp; Managed Services</h3>
+            <p class="service-card__desc">Strategic IT advisory and managed services to optimize your technology investments.</p>
+            <ul class="service-card__list">
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Technology Strategy &amp; Roadmap</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> IT Architecture Review</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Security Assessment &amp; Compliance</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Performance Optimization</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> 24/7 Managed Support</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Cost Reduction Consulting</li>
+            </ul>
+            <a href="#contact" class="service-card__link">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon"><i class="fas fa-sync-alt" aria-hidden="true"></i></div>
+            <h3 class="service-card__title">Digital Transformation</h3>
+            <p class="service-card__desc">End-to-end digital transformation strategies that modernize your entire business.</p>
+            <ul class="service-card__list">
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Digital Strategy Consulting</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Legacy System Modernization</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Process Digitization</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Cloud-Native Architecture</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Data &amp; Analytics Integration</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Change Management</li>
+            </ul>
+            <a href="#contact" class="service-card__link">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+            <h3 class="service-card__title">Security &amp; Compliance</h3>
+            <p class="service-card__desc">Robust security frameworks to protect your infrastructure and ensure regulatory compliance.</p>
+            <ul class="service-card__list">
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Cloud Security Architecture</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Vulnerability Assessment &amp; Pen Testing</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Identity &amp; Access Management</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Security Monitoring &amp; SIEM</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Compliance (SOC 2, ISO 27001)</li>
+              <li><i class="fas fa-check-circle" aria-hidden="true"></i> Incident Response</li>
+            </ul>
+            <a href="#contact" class="service-card__link">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI SOLUTIONS ============ -->
+    <section class="ai-section section" id="ai-solutions" aria-labelledby="ai-title">
+      <div class="ai-section__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="ai-section__header" data-aos="fade-up">
+          <div class="section__tag section__tag--ai">Next Generation</div>
+          <h2 class="section__title" id="ai-title">
+            AI Workflow <span class="text-gradient">Integration</span>
+          </h2>
+          <p class="section__subtitle">
+            We specialize in building intelligent AI-powered workflows that automate complex processes,
+            enhance decision-making, and unlock new levels of business efficiency.
+          </p>
+        </div>
+
+        <div class="ai-features__grid">
+
+          <div class="ai-feature" data-aos="fade-up" data-aos-delay="100">
+            <div class="ai-feature__icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+            <h3>Intelligent Process Automation</h3>
+            <p>Design and implement AI-driven workflows using LLMs, ML models, and RPA to automate repetitive tasks and complex decision trees at scale.</p>
+            <div class="ai-feature__tags">
+              <span>LLM</span><span>RPA</span><span>Automation</span>
+            </div>
+          </div>
+
+          <div class="ai-feature" data-aos="fade-up" data-aos-delay="200">
+            <div class="ai-feature__icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+            <h3>LLM Integration &amp; RAG Systems</h3>
+            <p>Build custom AI assistants, chatbots, and enterprise knowledge bases using GPT-4, Claude, Llama, and RAG architectures for intelligent information retrieval.</p>
+            <div class="ai-feature__tags">
+              <span>GPT-4</span><span>Claude</span><span>RAG</span>
+            </div>
+          </div>
+
+          <div class="ai-feature" data-aos="fade-up" data-aos-delay="300">
+            <div class="ai-feature__icon"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
+            <h3>AI Pipeline &amp; MLOps</h3>
+            <p>Design scalable AI data pipelines and MLOps frameworks for training, deploying, monitoring, and continuously improving machine learning models in production.</p>
+            <div class="ai-feature__tags">
+              <span>MLOps</span><span>Pipelines</span><span>Monitoring</span>
+            </div>
+          </div>
+
+          <div class="ai-feature" data-aos="fade-up" data-aos-delay="400">
+            <div class="ai-feature__icon"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+            <h3>Multi-Agent AI Systems</h3>
+            <p>Architect sophisticated multi-agent AI systems using LangGraph, AutoGen, and CrewAI to handle complex, multi-step business workflows with autonomous agents.</p>
+            <div class="ai-feature__tags">
+              <span>LangGraph</span><span>AutoGen</span><span>CrewAI</span>
+            </div>
+          </div>
+
+          <div class="ai-feature" data-aos="fade-up" data-aos-delay="500">
+            <div class="ai-feature__icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></div>
+            <h3>AI Analytics &amp; Insights</h3>
+            <p>Transform raw business data into actionable intelligence using AI-powered dashboards, predictive analytics models, and automated insight generation.</p>
+            <div class="ai-feature__tags">
+              <span>Predictive</span><span>Analytics</span><span>BI</span>
+            </div>
+          </div>
+
+          <div class="ai-feature" data-aos="fade-up" data-aos-delay="600">
+            <div class="ai-feature__icon"><i class="fas fa-plug" aria-hidden="true"></i></div>
+            <h3>AI API &amp; Platform Integration</h3>
+            <p>Seamlessly integrate AI capabilities into your existing systems — OpenAI, Anthropic, Google Vertex AI, AWS Bedrock, and custom fine-tuned models.</p>
+            <div class="ai-feature__tags">
+              <span>OpenAI API</span><span>Bedrock</span><span>Vertex AI</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ai-tools-section" data-aos="fade-up">
+          <h3 class="ai-tools__title">AI Technologies We Work With</h3>
+          <div class="ai-tools">
+            <span class="ai-tool">OpenAI GPT-4o</span>
+            <span class="ai-tool">Claude 3.5</span>
+            <span class="ai-tool">LangChain</span>
+            <span class="ai-tool">LangGraph</span>
+            <span class="ai-tool">AutoGen</span>
+            <span class="ai-tool">CrewAI</span>
+            <span class="ai-tool">Llama 3</span>
+            <span class="ai-tool">AWS Bedrock</span>
+            <span class="ai-tool">Google Vertex AI</span>
+            <span class="ai-tool">Hugging Face</span>
+            <span class="ai-tool">Pinecone</span>
+            <span class="ai-tool">ChromaDB</span>
+            <span class="ai-tool">Weaviate</span>
+            <span class="ai-tool">n8n</span>
+            <span class="ai-tool">Make.com</span>
+          </div>
+          <a href="#contact" class="btn btn--primary btn--lg">
+            Build Your AI Workflow <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process section section--light" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section__header" data-aos="fade-up">
+          <div class="section__tag">How We Work</div>
+          <h2 class="section__title" id="process-title">
+            Our Proven <span class="text-gradient">Process</span>
+          </h2>
+          <p class="section__subtitle">
+            A systematic, agile approach to delivering technology solutions that create measurable business value.
+          </p>
+        </div>
+
+        <div class="process__timeline">
+          <div class="process__step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step__bubble">
+              <div class="step__number">01</div>
+              <div class="step__icon"><i class="fas fa-search" aria-hidden="true"></i></div>
+            </div>
+            <div class="step__content">
+              <h3>Discover</h3>
+              <p>Deep-dive into your business objectives, technical landscape, and pain points to craft a clear, prioritized transformation roadmap.</p>
+            </div>
+          </div>
+
+          <div class="process__connector" aria-hidden="true"></div>
+
+          <div class="process__step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step__bubble">
+              <div class="step__number">02</div>
+              <div class="step__icon"><i class="fas fa-drafting-compass" aria-hidden="true"></i></div>
+            </div>
+            <div class="step__content">
+              <h3>Design</h3>
+              <p>Architect scalable, future-proof solutions with detailed technical specifications, system design, and a phased implementation plan.</p>
+            </div>
+          </div>
+
+          <div class="process__connector" aria-hidden="true"></div>
+
+          <div class="process__step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step__bubble">
+              <div class="step__number">03</div>
+              <div class="step__icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+            </div>
+            <div class="step__content">
+              <h3>Deploy</h3>
+              <p>Execute with precision using agile methodologies, automated testing, CI/CD pipelines, and continuous delivery for seamless launches.</p>
+            </div>
+          </div>
+
+          <div class="process__connector" aria-hidden="true"></div>
+
+          <div class="process__step" data-aos="fade-up" data-aos-delay="400">
+            <div class="step__bubble">
+              <div class="step__number">04</div>
+              <div class="step__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            </div>
+            <div class="step__content">
+              <h3>Optimize</h3>
+              <p>Continuously monitor, refine, and scale your systems to maximize performance, security, cost efficiency, and business outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="why-us section section--dark" id="why-us" aria-labelledby="why-us-title">
+      <div class="container">
+        <div class="section__header" data-aos="fade-up">
+          <div class="section__tag">Why Fluxoria</div>
+          <h2 class="section__title" id="why-us-title">
+            Why Businesses Choose <span class="text-gradient">Us</span>
+          </h2>
+        </div>
+
+        <div class="why-us__grid">
+          <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-card__icon"><i class="fas fa-lightbulb" aria-hidden="true"></i></div>
+            <h3>Innovation First</h3>
+            <p>We stay ahead of technology curves, delivering solutions that are not just current but built for the future.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="why-card__icon"><i class="fas fa-lock" aria-hidden="true"></i></div>
+            <h3>Security &amp; Scalability</h3>
+            <p>Non-negotiable standards for every solution we build — your infrastructure is always protected and ready to scale.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-card__icon"><i class="fas fa-handshake" aria-hidden="true"></i></div>
+            <h3>Long-Term Partnerships</h3>
+            <p>We align our success with your business growth. Long-term partnerships matter more than short-term profits.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="why-card__icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+            <h3>Faster Execution</h3>
+            <p>Agile methodologies and an automation-first mindset means faster delivery without compromising on quality.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-card__icon"><i class="fas fa-eye" aria-hidden="true"></i></div>
+            <h3>Full Transparency</h3>
+            <p>Clear communication, detailed reporting, and complete visibility into every phase of your project lifecycle.</p>
+          </div>
+          <div class="why-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="why-card__icon"><i class="fas fa-infinity" aria-hidden="true"></i></div>
+            <h3>Continuous Learning</h3>
+            <p>Our team stays at the cutting edge — always evolving with the latest in cloud, AI, DevOps, and emerging tech.</p>
+          </div>
+        </div>
+
+        <div class="philosophy-section" data-aos="fade-up">
+          <blockquote class="philosophy__quote">
+            <p>
+              "If it can be automated, <strong>optimize it.</strong><br />
+              If it can be improved, <strong>transform it.</strong><br />
+              If it can scale, <strong>build it future-ready.</strong>"
+            </p>
+            <cite>— The Fluxoria Philosophy</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECH STACK ============ -->
+    <section class="tech-stack section section--light" id="tech-stack" aria-labelledby="tech-title">
+      <div class="container">
+        <div class="section__header" data-aos="fade-up">
+          <div class="section__tag">Technologies</div>
+          <h2 class="section__title" id="tech-title">
+            Our Technology <span class="text-gradient">Expertise</span>
+          </h2>
+          <p class="section__subtitle">
+            We work with industry-leading technologies to deliver the best solutions for your business.
+          </p>
+        </div>
+
+        <div class="tech-categories">
+          <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+            <div class="tech-category__header">
+              <i class="fas fa-cloud" aria-hidden="true"></i>
+              <h3>Cloud Platforms</h3>
+            </div>
+            <div class="tech-items">
+              <span class="tech-badge">AWS</span>
+              <span class="tech-badge">Microsoft Azure</span>
+              <span class="tech-badge">Google Cloud</span>
+              <span class="tech-badge">DigitalOcean</span>
+              <span class="tech-badge">Cloudflare</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="tech-category__header">
+              <i class="fas fa-cogs" aria-hidden="true"></i>
+              <h3>DevOps &amp; IaC</h3>
+            </div>
+            <div class="tech-items">
+              <span class="tech-badge">Terraform</span>
+              <span class="tech-badge">Ansible</span>
+              <span class="tech-badge">Jenkins</span>
+              <span class="tech-badge">GitHub Actions</span>
+              <span class="tech-badge">GitLab CI</span>
+              <span class="tech-badge">ArgoCD</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-aos-delay="300">
+            <div class="tech-category__header">
+              <i class="fab fa-docker" aria-hidden="true"></i>
+              <h3>Containers &amp; Orchestration</h3>
+            </div>
+            <div class="tech-items">
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Kubernetes</span>
+              <span class="tech-badge">Helm</span>
+              <span class="tech-badge">Istio</span>
+              <span class="tech-badge">EKS</span>
+              <span class="tech-badge">GKE</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-aos-delay="400">
+            <div class="tech-category__header">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              <h3>Development</h3>
+            </div>
+            <div class="tech-items">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Go</span>
+              <span class="tech-badge">FastAPI</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-aos-delay="500">
+            <div class="tech-category__header">
+              <i class="fas fa-brain" aria-hidden="true"></i>
+              <h3>AI &amp; Machine Learning</h3>
+            </div>
+            <div class="tech-items">
+              <span class="tech-badge">OpenAI</span>
+              <span class="tech-badge">LangChain</span>
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">Hugging Face</span>
+              <span class="tech-badge">MLflow</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-aos-delay="600">
+            <div class="tech-category__header">
+              <i class="fas fa-database" aria-hidden="true"></i>
+              <h3>Data &amp; Monitoring</h3>
+            </div>
+            <div class="tech-items">
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Redis</span>
+              <span class="tech-badge">Elasticsearch</span>
+              <span class="tech-badge">Prometheus</span>
+              <span class="tech-badge">Grafana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section section--dark" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__grid">
+
+          <div class="contact__info" data-aos="fade-right">
+            <div class="section__tag">Get In Touch</div>
+            <h2 class="section__title" id="contact-title">
+              Let's Build Something <span class="text-gradient">Amazing</span>
+            </h2>
+            <p class="contact__intro">
+              Ready to transform your business with cutting-edge technology?
+              Let's discuss your vision and build a roadmap to success.
+            </p>
+
+            <div class="contact__details">
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <strong>Email Us</strong>
+                  <a href="mailto:hello@fluxoria.com">hello@fluxoria.com</a>
+                </div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                <div>
+                  <strong>Call Us</strong>
+                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/company/fluxoria" target="_blank" rel="noopener noreferrer">Fluxoria LLP</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__trust">
+              <div class="trust-badge">
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                <span>100% Confidential</span>
+              </div>
+              <div class="trust-badge">
+                <i class="fas fa-clock" aria-hidden="true"></i>
+                <span>Response within 24hrs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-wrap" data-aos="fade-left">
+            <form class="contact__form" id="contactForm" novalidate>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+                </div>
+                <div class="form__group">
+                  <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="john@company.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="company">Company Name</label>
+                  <input type="text" id="company" name="company" placeholder="Your Company" autocomplete="organization" />
+                </div>
+                <div class="form__group">
+                  <label for="service">Service Interested In</label>
+                  <select id="service" name="service">
+                    <option value="">Select a Service</option>
+                    <option value="software">Software Development</option>
+                    <option value="cloud">Cloud &amp; Infrastructure</option>
+                    <option value="devops">DevOps &amp; Automation</option>
+                    <option value="ai">AI Workflow Integration</option>
+                    <option value="consulting">IT Consulting</option>
+                    <option value="transformation">Digital Transformation</option>
+                    <option value="security">Security &amp; Compliance</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="message">Tell us about your project <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your project, goals, timeline, and any specific requirements..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              </button>
+              <p class="form__note">We respect your privacy. Your information is never shared.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <img src="assets/logo.png" alt="Fluxoria LLP" width="140" height="46" loading="lazy" />
+          <p>Empowering Digital Transformation Through Smart Cloud, DevOps, and AI Solutions.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/company/fluxoria" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Software Development</a></li>
+            <li><a href="#services">Cloud &amp; Infrastructure</a></li>
+            <li><a href="#services">DevOps &amp; Automation</a></li>
+            <li><a href="#ai-solutions">AI Workflow Integration</a></li>
+            <li><a href="#services">IT Consulting</a></li>
+            <li><a href="#services">Security &amp; Compliance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-us">Why Fluxoria</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#tech-stack">Technologies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><a href="mailto:hello@fluxoria.com"><i class="fas fa-envelope" aria-hidden="true"></i> hello@fluxoria.com</a></li>
+            <li><a href="tel:+1234567890"><i class="fas fa-phone" aria-hidden="true"></i> +1 (234) 567-890</a></li>
+          </ul>
+          <div class="footer__badges">
+            <div class="footer__badge">
+              <i class="fas fa-shield-alt" aria-hidden="true"></i>
+              <span>ISO 27001 Compliant</span>
+            </div>
+            <div class="footer__badge">
+              <i class="fas fa-award" aria-hidden="true"></i>
+              <span>SOC 2 Ready</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footerYear">2025</span> Fluxoria LLP. All rights reserved. | Empowering Digital Transformation Worldwide.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- AOS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Main Script -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
