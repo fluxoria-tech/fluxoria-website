@@ -1,84 +1,148 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f9;
-    color: #333;
+body{
+margin:0;
+font-family:Poppins;
+background:#0b0f1a;
+color:white;
+overflow-x:hidden;
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
 }
 
-header {
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+position:fixed;
+width:100%;
 }
 
-nav {
-    background: #111827;
-    text-align: center;
-    padding: 15px;
+.logo{
+font-family:Orbitron;
+font-size:22px;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 500;
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
+nav a{
+color:white;
+text-decoration:none;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+header h1{
+font-size:65px;
+font-family:Orbitron;
+background:linear-gradient(90deg,#6366f1,#22c55e);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
-.card ul {
-    padding-left: 20px;
+.btn{
+background:#6366f1;
+padding:12px 28px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+margin-top:20px;
 }
 
-.industry-list {
-    text-align: center;
+section{
+padding:100px 10%;
+text-align:center;
 }
 
-.industry-list span {
-    display: inline-block;
-    background: #1e3a8a;
-    color: white;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 20px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:15px;
+transition:0.4s;
 }
 
-footer {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #6366f1;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:40px;
+}
+
+.tags span{
+background:#111827;
+padding:10px 20px;
+margin:8px;
+display:inline-block;
+border-radius:20px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+margin:auto;
+}
+
+input,textarea{
+padding:12px;
+border-radius:6px;
+border:none;
+}
+
+button{
+padding:12px;
+background:#6366f1;
+color:white;
+border:none;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#111827;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+font-size:24px;
 }
